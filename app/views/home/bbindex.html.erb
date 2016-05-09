@@ -1,0 +1,18 @@
+<div class="container">
+    <h3>브라운브레스 상품읽어오기</h3>
+
+    <form action="/home/bbindex" method ="POST">
+      <div class="form-group">
+        <label for="inputURL">URL을 입력해주세요</label>
+        <input name ="urladdress" type="text" class="form-control" id="urladdressid" placeholder="주소를 입력하세요">
+      </div> 
+      <button type="submit" class="btn btn-default">제출</button>
+    </form>
+    
+    <h3>가격 : <%=@price%></h3>
+    <br>
+    <h3>제품명 : <%=@product%></h3>
+    <img src="<%=@imagesrc%>" width="500">
+    <br>
+
+</div>
